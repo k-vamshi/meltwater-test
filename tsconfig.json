@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",             // Compile TypeScript to modern JavaScript
+    "module": "CommonJS",           // Use CommonJS module system, which is used by Node.js
+    "esModuleInterop": true,        // Allows default imports of CommonJS modules (like Express)
+    "skipLibCheck": true,           // Skip checking of declaration files for performance
+    "outDir": "./dist",             // Output compiled JavaScript to 'dist' folder
+    "rootDir": "./src",             // Specify the root directory for TypeScript files
+    "strict": true,                 // Enable strict type checking (helps avoid bugs)
+    "resolveJsonModule": true,      // Allow importing JSON files as modules
+    "forceConsistentCasingInFileNames": true // Enforce consistent file naming
+  },
+  "include": [
+    "src/**/*.ts"                   // Only include TypeScript files in the 'src' folder
+  ],
+  "exclude": [
+    "node_modules"                  // Exclude 'node_modules' directory from TypeScript processing
+  ]
+}
